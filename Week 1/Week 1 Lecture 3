@@ -1,0 +1,230 @@
+# Ethical Hacking – Week 1
+
+## Lecture 03: Basic Concepts of Networking (II)
+
+
+
+---
+
+## Topics Covered
+
+* Datagram Approach
+* Problems in Datagram Networks
+* Advantages of Datagram Approach
+* Network Delays
+* Datagram Packet Switching
+* Layered Network Architecture
+* OSI Reference Model (7 Layers)
+* Functions of OSI Layers
+* Data Flow in OSI Model
+* Internetworking Devices
+
+---
+
+## 1. Datagram Approach
+
+* No route is established beforehand
+* No initial setup delay
+* Each packet is transmitted **independently**
+* No fixed path for data transmission
+* Network does **not maintain history** of packets
+
+### Example
+
+* Postal system (letters may take different routes)
+
+```
+A → B → C
+A → D → C
+(Packets may follow different paths)
+```
+
+---
+
+## 2. Routing in Datagram Networks
+
+* Each intermediate node makes **dynamic routing decisions**
+* Routing table is used at every node
+* Each packet contains:
+
+  * Source address
+  * Destination address
+
+If destination address is incorrect, the packet is dropped.
+
+---
+
+## 3. Problems in Datagram Networks
+
+* Packets may arrive **out of order**
+* Some packets may take longer routes
+* Packet loss if node crashes (buffer overflow)
+* Duplicate packets may be generated
+
+  * Happens when ACK is delayed or not received
+
+---
+
+## 4. Advantages of Datagram Approach
+
+* Faster for small packet sizes
+* No route establishment or termination delay
+* More flexible
+* Can dynamically switch paths if nodes are overloaded
+* Packets between two hosts may follow different paths
+
+---
+
+## 5. Network Delays (Comparative Study)
+
+Three types of delays must be considered:
+
+### (a) Propagation Delay
+
+* Time taken by a signal to travel from source to destination
+* Depends on distance and medium
+
+### (b) Transmission Delay
+
+* Time taken to transmit a packet
+* Depends on bandwidth (Mbps)
+
+### (c) Processing Delay
+
+* Time taken by a node to process a packet
+* Occurs in store‑and‑forward method
+
+---
+
+## 6. Circuit vs Virtual Circuit Packet Switching
+
+### Circuit Switching
+
+* After circuit establishment, data flows continuously
+* No delay during transmission
+
+### Virtual Circuit Packet Switching
+
+* Call request sent first
+* Call accept received back
+* Packets sent sequentially in pipelined manner
+* Uses store‑and‑forward technique
+
+---
+
+## 7. Datagram Packet Switching
+
+* No initial delay
+* Small data reaches faster
+* Data sent independently
+* Packets may follow different paths
+* Highly flexible
+* Most widely used
+* Uses store‑and‑forward method
+
+---
+
+## 8. Layered Network Architecture
+
+* Networking system has many responsibilities
+* Dividing tasks into layers simplifies design
+* Each layer has a **well‑defined responsibility**
+
+### OSI Reference Model
+
+* Open Systems Interconnection (OSI)
+* 7‑layer hierarchical model
+* Changes in one layer do not affect others
+
+---
+
+## 9. The 7‑Layer OSI Model
+
+```
+7. Application
+6. Presentation
+5. Session
+4. Transport
+3. Network
+2. Data Link
+1. Physical
+```
+
+### Visibility
+
+* Upper layers (Application → Transport): Host‑to‑Host
+* Lower layers (Network → Physical): Node‑to‑Node
+
+---
+
+## 10. Functions of OSI Layers
+
+### Physical Layer
+
+* Deals with electrical/optical signals
+* Transmits raw bit stream
+
+### Data Link Layer
+
+* Reliable transfer of frames
+* Flow control and error control
+* Retransmits data if error occurs
+
+### Network Layer
+
+* Packet routing and forwarding
+* Establishing, maintaining, terminating connections
+
+### Transport Layer
+
+* End‑to‑end reliable data transfer
+* Error recovery and flow control
+
+### Session Layer
+
+* Manages sessions
+* Handles login, logout, session termination
+
+### Presentation Layer
+
+* Optional layer
+* Encryption, decryption, formatting
+
+### Application Layer
+
+* Interface between user application and network
+
+---
+
+## 11. How Data Flows (OSI Model)
+
+```
+Application ↓
+Presentation ↓
+Session ↓
+Transport ↓
+Network ↓
+Data Link ↓
+Physical → Transmission → Destination
+```
+
+---
+
+## 12. Internetworking Devices
+
+### Hub
+
+* Extends LAN
+
+### Bridge / Layer‑2 Switch
+
+* Connects two or more LANs
+* Works at Data Link layer
+
+### Router / Layer‑3 Switch
+
+* Connects LANs and WANs
+* Works at Network layer
+
+---
+
