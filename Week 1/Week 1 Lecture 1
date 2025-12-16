@@ -1,0 +1,288 @@
+Ethical Hacking – Week 1 (Topics Covered)
+
+**Topics Covered (In Short)**
+Ethical Hacking – Introduction
+Penetration Testing
+Security Testing
+Basic Hacking Terminologies
+Denial of Service (DoS)
+Port Scanning
+Gaining Access Techniques
+Front Door Attacks
+Back Door Attacks
+Trojan Horses
+Software Vulnerabilities & Exploitation
+Post-Exploitation Activities
+Script Kiddies & Penetration Testers
+Penetration Testing Methodologies
+White Box Model
+Black Box Model
+Grey Box Model
+Legal & Ethical Aspects of Hacking
+Skills Required for Ethical Hackers
+
+## 1. What is Ethical Hacking?
+
+**Ethical Hacking** is the **authorized and legal practice** of identifying weaknesses and vulnerabilities in computer systems, networks, or applications by **thinking and acting like a malicious hacker**, but with permission.
+
+### Key Idea
+- Ethical hackers **replicate the intent and actions** of malicious hackers
+- Goal is **security improvement**, not damage
+
+### Definition (Easy to Remember)
+> Ethical hacking is the act of **legally breaking into systems** to find security weaknesses before attackers do.
+
+### Also Known As
+- Penetration Testing
+- Intrusion Testing
+- Red Teaming
+
+### ASCII Concept Diagram
+```
+Malicious Hacker           Ethical Hacker
+----------------           ----------------
+Breaks security            Tests security
+No permission              Written permission
+Causes damage              Reports weaknesses
+Steals data                Protects data
+```
+
+---
+
+## 2. Ethical Hacking vs Penetration Testing vs Security Testing
+
+### Ethical Hacking
+- Broad term
+- Used by companies to improve security
+- Covers tools, techniques, and mindset
+
+### Penetration Testing
+- **Legal attempt** to break into a company’s network
+- Objective: **find weak links**
+- Testers **only report findings**
+- ❌ Do NOT fix problems
+
+### Security Testing
+- Includes **security policies & procedures**
+- Testers may **suggest solutions**
+- More defensive in nature
+
+### Comparison Table
+```
+Ethical Hacking → Think like attacker
+Pen Testing     → Find vulnerabilities
+Security Test   → Secure & protect system
+```
+
+---
+
+## 3. Important Terminologies
+
+### 3.1 Hacking
+- Using computer expertise to **bypass or explore systems**
+- Can be legal or illegal depending on permission
+
+### 3.2 Cracking
+- **Illegal activity**
+- Breaking security of software or systems
+
+### 3.3 Spoofing
+- Faking identity (IP address, email, MAC address)
+- Example: pretending to be a trusted system
+
+### 3.4 Denial of Service (DoS)
+- Flooding a target with excessive traffic
+- Makes system **unavailable to users**
+
+#### ASCII Flow
+```
+Attacker
+   |
+   |  Massive Requests
+   v
+[ Server ]  ❌ Cannot Respond
+```
+
+### 3.5 Port Scanning
+- Searching for **open ports**
+- Ports = entry points
+- Each running service listens on a port
+
+```
+PC / Server
+-----------
+Port 21  → FTP
+Port 22  → SSH
+Port 80  → HTTP
+Port 443 → HTTPS
+
+Open Port = Possible Entry
+```
+
+---
+
+## 4. Gaining Access
+
+### 4.1 Front Door Attacks
+
+Methods:
+- Password guessing
+- Guessing valid passwords
+- Password / key stealing
+
+```
+[ Login Page ]
+Username: admin
+Password: ??????
+```
+
+### 4.2 Back Door
+
+- Hidden entry points
+- Left intentionally or accidentally by developers
+- Often used for debugging
+
+Examples:
+- Default router passwords
+- Hidden admin accounts
+
+### 4.3 Trojan Horses
+
+- Malicious software hidden inside legit software
+- Installed unknowingly by users
+
+```
+User downloads free software
+        ↓
+Trojan installs backdoor
+        ↓
+Hacker gains access
+```
+
+### 4.4 Software Vulnerability Exploitation
+
+- Vulnerabilities are often published by vendors
+- Fixed using **security patches**
+- Hackers exploit **unpatched systems**
+
+> Script kiddies often use ready-made tools to exploit known vulnerabilities
+
+---
+
+## 5. Once Inside the System, Hackers Can
+
+### 5.1 Modify Logs
+- Logs track system activity
+- Hackers delete or alter logs to **hide traces**
+
+### 5.2 Steal Files
+- Data theft
+- Sometimes destroy data after stealing
+
+### 5.3 Modify Files
+- To show presence
+- To cause mischief
+
+### 5.4 Install Backdoors
+- Most dangerous
+- Allows attacker to return anytime
+- User may never know
+
+```
+Initial Attack → Backdoor Installed → Re-entry Anytime
+```
+
+---
+
+## 6. Role of Security & Penetration Testers
+
+### Script Kiddies / Packet Monkeys
+- Inexperienced hackers
+- Use copied tools and scripts
+- Limited understanding
+
+### Professional Penetration Testers
+- Write custom tools and scripts
+- Programming languages used:
+  - Perl
+  - C / C++
+  - Python
+  - JavaScript
+
+---
+
+## 7. Penetration Testing Methodologies
+
+### 7.1 Tiger Box
+- Laptop with:
+  - Multiple Operating Systems
+  - Hacking tools
+- Used for:
+  - Vulnerability assessment
+  - Attacks simulation
+
+### 7.2 White Box Model
+- Tester knows everything
+- Network topology known
+- Interview company IT staff
+
+```
+[ Company ] → Full Info → Tester
+```
+
+### 7.3 Black Box Model
+- Tester knows nothing
+- Same as real attacker
+- Tester must discover everything
+
+```
+[ Company ] ← No Info → Tester
+```
+
+### 7.4 Grey Box Model
+- Hybrid approach
+- Partial information provided
+
+```
+White Box + Black Box = Grey Box
+```
+
+---
+
+## 8. What You Can Legally Do
+
+- Technology laws change rapidly
+- Laws differ from place to place
+- Always know **local cyber laws**
+
+### Illegal Activities
+- Accessing a computer without permission
+- Installing viruses or worms
+- DoS attacks
+- Denying users access to network resources
+
+> Even possessing some tools may be illegal in certain regions
+
+---
+
+## 9. Ethical Hacking in a Nutshell
+
+### To Become a Security Tester, You Need:
+
+- Knowledge of:
+  - Networking
+  - Computer systems
+- Communication skills
+  - Management
+  - IT personnel
+- Understanding of laws
+- Ability to use necessary tools
+
+### Final ASCII Summary
+```
+Skills + Knowledge + Ethics + Permission
+                ↓
+         Ethical Hacker
+```
+
+---
